@@ -25,7 +25,6 @@ for index, row in df_edges.iterrows():
 for node in Nodes:
     if df_nodes[df_nodes['States'] == node].index.values:
         colour_map.append('green')
-        # print(node + ', green')
     elif df_nodes[df_nodes['UTs'] == node].index.values:
         colour_map.append('yellow')
     elif df_nodes[df_nodes['Bordering Countries'] == node].index.values:
